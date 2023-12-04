@@ -1,0 +1,17 @@
+body{
+    background-color: var(--bg, #0c0c0c);
+}
+
+.radio__container{
+    background: url('../imagenes/chubut-comodoro-rivadavia.webp'), lightgray 80% / cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.container{
+    width: 1440px;
+    height: 595px;
+    margin: 0 auto;
+    display: flex;
+}
