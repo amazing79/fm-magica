@@ -1,17 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+:root{
+    --bg-color: #0c0c0c;
+    --primary:#FFF;
+    --card-w: 328px;
+    --card-h: 403px;
+    --big-size:96px;
+    --medium-size:48px;
+    --small-size:32px;
+    --section-heigth:554px;
+}
+
 body{
-    background-color: var(--bg, #0c0c0c);
+    background-color: var(--bg-color, #0c0c0c);
+    color: var(--primary);
+    font-family: 'Inter', sans-serif;
+}
+
+h1{
+    font-size: var(--big-size);
+}
+
+h2{
+    font-size: var(--medium-size);
+}
+
+h3{
+    font-size: var(--small-size);
+}
+
+audio{
+    display: block;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.radio__container, 
+.info__container,
+.social__container{
+    width: 100%;
+    min-height: var(--section-heigth);
+} 
+
+.social__container{
+    background-color: #141313;
 }
 
 .radio__container{
     background: url('../imagenes/chubut-comodoro-rivadavia.webp'), lightgray 80% / cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.container{
-    width: 1440px;
-    height: 595px;
-    margin: 0 auto;
+.info__container{
+    background: url('../imagenes/wallpaperbetter.com_1920x1080.jpg'), lightgray 50% / cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: darken;
     display: flex;
+    justify-content:space-around;
+}
+
+.card{
+    width: var(--card-w);
+    height: var(--card-h);
+    margin-top: 60px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.25);
+   
+}
+
+.card:hover{
+    cursor:grab;
+    filter: grayscale(5);
+}
+
+.firts, 
+.second, 
+.third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode:darken;
+}
+
+.firts{
+    background: url('../imagenes/light-abstraction-retro-music-wallpaper-preview.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.second{
+    background: url('../imagenes/las-6-mejores-apps-android-para-escuchar-la-radio.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.third{
+    background: url('../imagenes/contacto.jpg'), lightgray -49.054px -1.638px / 170.858% 101.895% no-repeat;
+    margin-bottom: 50px;
+}
+
+.card__text{
+    text-align: center;
+    font-size: var(--medium-size);
+    font-weight: 700;
+    text-shadow: 1px 1px 15px rgba(16, 16, 16, 1);
+}
+
+@media screen and (max-width:1000px) {
+    :root{
+        --big-size:48px;
+        --medium-size:24px;
+        --small-size:18px;
+        --card-w:250px;
+        --card-h:303px;
+    }
+
+    .info__container{
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
 }
