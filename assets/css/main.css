@@ -60,7 +60,7 @@ audio{
 }
 
 .radio__container{
-    background: url('../imagenes/chubut-comodoro-rivadavia.webp'), lightgray 80% / cover;
+    background: url('../imagenes/chubut-comodoro-rivadavia.webp'), #141313 80% / cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -70,7 +70,7 @@ audio{
 }
 
 .info__container{
-    background: url('../imagenes/wallpaperbetter.com_1920x1080.jpg'), lightgray 50% / cover;
+    background: url('../imagenes/wallpaperbetter.com_1920x1080.jpg'), #141313 50% / cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -141,5 +141,11 @@ audio{
     .info__container{
         flex-direction: column;
         align-items: center;
+        background-color: #141313;
+        background-image: url('../imagenes/wallpaperbetter.com_1920x1080.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: unset;
     }
 }
