@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="assets/imagenes/radio.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <script src="assets/js/app.js"></script>
     <title>FM-MAGICA</title>
 </head>
 <body>
@@ -14,10 +15,10 @@
             <h1>FM Mágica 94.1</h1>
             <h2>La radio de zona norte</h2>
             <h3>Compartiendo tu vida y tus sentidos</h3>
-            <audio autoplay controls src="https://radio.netyco.com:17238/;stream.mp3"></audio>
+            <audio id="radioPlayer" controls src="https://radio.netyco.com:17238/;stream.mp3"></audio>
         </div>
         <div class="info__container">
-            <div class="card firts"><p class="card__text">Escuchanos<br />en<br />vivo</p></div>
+            <div class="card firts" id="radio"><p class="card__text">Escuchanos<br />en<br />vivo</p></div>
             <div class="card second"><p class="card__text">Descarga<br />nuestra<br />app<br />para<br />Android</p></div>
             <div class="card third"><p class="card__text">Contactate<br />con <br />nosotros</p></div>
         </div>

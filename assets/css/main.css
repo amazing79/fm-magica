@@ -36,7 +36,7 @@ h3{
 }
 
 audio{
-    display: block;
+    visibility: hidden;
 }
 
 .container{
@@ -141,6 +141,5 @@ audio{
     .info__container{
         flex-direction: column;
         align-items: center;
-        overflow: hidden;
     }
 }
