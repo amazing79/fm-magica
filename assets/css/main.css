@@ -114,18 +114,23 @@ audio{
     cursor: pointer;
 }   
 
+.download__app{
+    text-decoration: none;
+    color: var(--primary);
+}
+
 .active {
     animation: anim_player .5s infinite ease-in-out;
 }
 
 @keyframes anim_player {
-    0%,50%,100% {
+    0%,99% {
         transform: scale(100%);
     }
-    25% {
+    33% {
         transform: scale(105%);
     }
-    75% {
+    66% {
         transform: scale(95%);
     }
 }
