@@ -74,7 +74,6 @@ audio{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-blend-mode: darken;
     display: flex;
     justify-content:space-around;
 }
@@ -86,11 +85,6 @@ audio{
     border-radius: 5px;
     box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.25);
    
-}
-
-.card:hover{
-    cursor:grab;
-    filter: grayscale(5);
 }
 
 .firts, 
@@ -107,6 +101,33 @@ audio{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}  
+
+.img__button{
+    transition: transform ease-in-out .5s;
+}
+
+.img__button:hover{
+    transform: scale(110%);
+    cursor: pointer;
+}   
+
+.active {
+    animation: anim_player .5s infinite ease-in-out;
+}
+
+@keyframes anim_player {
+    0%,50%,100% {
+        transform: scale(100%);
+    }
+    25% {
+        transform: scale(105%);
+    }
+    75% {
+        transform: scale(95%);
+    }
 }
 
 .second{

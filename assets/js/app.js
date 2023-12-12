@@ -2,9 +2,9 @@ const PLAYING = 'playing';
 const PAUSED = 'paused';
 const STATUS = { PLAYING, PAUSED};
 
-function handlePlayEvent()
+function handlePlayEvent(evt)
 {
-    console.log('y el click?');
+    evt.target.classList.toggle('active');
     let player = document.getElementById('radioPlayer');
     let actualStatus = sessionStorage.getItem('status');
     if(actualStatus === STATUS.PAUSED) {
