@@ -79,7 +79,7 @@ audio{
 }
 
 .radio__container{
-    background: url('../imagenes/chubut-comodoro-rivadavia.webp'), #141313 80% / cover;
+    background: url('../imagenes/hero-bg.webp'), #141313 80% / cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -89,7 +89,7 @@ audio{
 }
 
 .info__container{
-    background: url('../imagenes/wallpaperbetter.com_1920x1080.jpg'), #141313 50% / cover;
+    background: url('../imagenes/information-bg.jpg'), #141313 50% / cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -117,7 +117,7 @@ audio{
 }
 
 .firts{
-    background: url('../imagenes/light-abstraction-retro-music-wallpaper-preview.jpg');
+    background: url('../imagenes/radio-online.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -160,7 +160,7 @@ audio{
 }
 
 .second{
-    background: url('../imagenes/las-6-mejores-apps-android-para-escuchar-la-radio.jpg');
+    background: url('../imagenes/download-app.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -192,7 +192,7 @@ audio{
         flex-direction: column;
         align-items: center;
         background-color: #141313;
-        background-image: url('../imagenes/wallpaperbetter.com_1920x1080.jpg');
+        background-image: url('../imagenes/information-bg.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
