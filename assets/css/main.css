@@ -170,11 +170,37 @@ audio{
 .third{
     background: url('../imagenes/contacto.jpg'), lightgray -49.054px -1.638px / 170.858% 101.895% no-repeat;
     margin-bottom: 50px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform .5s linear;
+   
+}
+
+.third:hover {
+    transform: rotateY(180deg);
+}
+
+
+.contact__text{
+    backface-visibility: hidden;
+    width: var(--card-w);
+    position: absolute;
+}
+
+.rotate{
+    transform: rotateY(180deg);
 }
 
 .card__text{
     text-align: center;
     font-size: var(--medium-size);
+    font-weight: 700;
+    text-shadow: 1px 1px 15px rgba(16, 16, 16, 1);
+}
+
+.card__text__show{
+    text-align: center;
+    font-size: 24px;
     font-weight: 700;
     text-shadow: 1px 1px 15px rgba(16, 16, 16, 1);
 }
