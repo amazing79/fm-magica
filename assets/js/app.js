@@ -2,7 +2,7 @@ const PLAYING = 'playing';
 const PAUSED = 'paused';
 const NOT_LOADED = 'not-loaded';
 const LOADED  = 'loaded';
-const RADIO_URL = 'https://radio.netyco.com:17238/;stream.mp3';
+const RADIO_URL = 'https://masservidor.net/8420/stream';
 const STATUS = { PLAYING, PAUSED, LOADED, NOT_LOADED};
 
 function handlePlayEvent(evt)
